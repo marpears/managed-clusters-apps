@@ -11,6 +11,7 @@ items:
       app.kubernetes.io/component: test-app
       app.kubernetes.io/instance: test-app
     name: nodejs-16-minimal
+    namespace: dev-team-a
   spec:
     lookupPolicy:
       local: false
@@ -38,6 +39,7 @@ items:
       app.kubernetes.io/component: test-app
       app.kubernetes.io/instance: test-app
     name: test-app
+    namespace: dev-team-a
   spec:
     lookupPolicy:
       local: false
@@ -54,6 +56,7 @@ items:
       app.kubernetes.io/component: test-app
       app.kubernetes.io/instance: test-app
     name: test-app
+    namespace: dev-team-a
   spec:
     nodeSelector: null
     output:
@@ -96,6 +99,7 @@ items:
       app.kubernetes.io/component: test-app
       app.kubernetes.io/instance: test-app
     name: test-app
+    namespace: dev-team-a
   spec:
     replicas: 1
     selector:
@@ -129,6 +133,7 @@ items:
       app.kubernetes.io/component: test-app
       app.kubernetes.io/instance: test-app
     name: test-app
+    namespace: dev-team-a
   spec:
     ports:
     - name: 8080-tcp

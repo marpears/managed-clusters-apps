@@ -1,0 +1,4 @@
+bases:
+- ../../base
+resources:
+- apps/dev-team-a/test-app.yaml
